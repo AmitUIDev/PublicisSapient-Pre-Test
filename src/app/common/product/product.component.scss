@@ -1,0 +1,42 @@
+.product-container{
+    margin: 10;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(67,77, 148);
+    min-height: 390px;
+
+    .product-heading {
+        color: rgb(67,77, 148);
+        font-weight: bold;
+        padding: 10px 0;
+    }
+
+    .row{
+        display: flex;
+        width: 100%;
+    }
+    .row ::after {
+        clear: both;
+    }
+
+    .font-bold{
+        font-weight: bold;
+        color: black;
+    }
+
+    .half-section {
+        width: 50%;
+        padding: 5px 0;
+    }
+
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .product-image{
+        background-color: #f2f2f2;
+        margin-bottom: 10px;
+    }
+}

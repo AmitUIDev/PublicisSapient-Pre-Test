@@ -1,0 +1,24 @@
+<div class="product-container">
+    <div class="product-image">
+        <a [href]="product.links?.article_link"> <img [src]="product.links?.mission_patch_small" /></a>
+    </div>
+    <div class="row product-heading">{{product.mission_name}} # {{product.flight_number}}</div>
+    <div class="row">
+        <div class="half-section font-bold">Mission Ids:</div>
+        <div class="half-section">
+            <li *ngFor="let id of product.mission_id">{{id}}</li>
+        </div>
+    </div>
+    <div class="row">
+        <div class="half-section font-bold">Launch Year:</div>
+        <div class="half-section">{{product.launch_year}}</div>
+    </div>
+    <div class="row">
+        <div class="half-section  font-bold">Successful Launch:</div>
+        <div class="half-section">{{product.launch_success}}</div>
+    </div>
+    <div class="row">
+        <div class="half-section  font-bold">Successful Landing:</div>
+        <div class="half-section">{{product.launch_landing}}</div>
+    </div>
+</div>

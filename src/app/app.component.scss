@@ -1,0 +1,26 @@
+.container-filter{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+
+    .product{
+        padding: 0 5px 10px 5px;
+    }
+
+    .header{
+        font-size: 130%;
+        font-weight: bold;
+        padding: 20px;
+    }
+    
+    .footer{
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+
+        .name {
+            font-weight: normal;
+        }
+    }
+
+}

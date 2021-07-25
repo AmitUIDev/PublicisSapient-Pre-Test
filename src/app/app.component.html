@@ -1,0 +1,22 @@
+<div class="container-filter">
+  <div class="row header">
+    SpaceX Launch Programs
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-3">
+      <app-datafilter (filterEvent)="onFilterChanged($event)"></app-datafilter>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-9">
+      <div class="row">
+        <div *ngFor="let product of products" class="col-sm-12 col-md-6 col-lg-3">
+          <div class="product">
+            <app-product [product]="product"></app-product>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row footer">
+    Developed By - <span class="name"> Amit Harlikar</span>
+  </div>
+</div>

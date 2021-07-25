@@ -1,0 +1,49 @@
+<div class="filter-container">
+    Filters
+    <div class="filter-group">
+        Launch Year
+    </div>
+    <div class="row">
+        <div *ngFor="let year of [2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020]"
+            class="col-sm-6 col-md-6 col-lg-6">
+            <div class="radio-toolbar">
+                <input name="yearLaunch" type="radio" [id]="year" [value]="year">
+                <label [for]="year" (click)="onFilterYear(year)">{{year}}</label>
+            </div>
+        </div>
+    </div>
+    <div class="filter-group">
+        Successful Launch
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="radio-toolbar">
+                <input name="successLaunch" id="successLaunchtrue" type="radio" [value]="true"><label
+                    for="successLaunchtrue" (click)="onFilterLaunch(true)">True</label>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="radio-toolbar">
+                <input name="successLaunch" id="successLaunchfalse" type="radio" [value]="false"><label
+                    for="successLaunchfalse" (click)="onFilterLaunch(false)">False</label>
+            </div>
+        </div>
+    </div>
+    <div class="filter-group">
+        Successful Landing
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="radio-toolbar">
+                <input name="successLand" id="successLandtrue" type="radio" [value]="true"><label
+                    for="successLandtrue" (click)="onFilterSuccess(true)">True</label>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="radio-toolbar">
+                <input name="successLand" id="successLandfalse" type="radio" [value]="false"><label
+                    for="successLandfalse" (click)="onFilterSuccess(false)">False</label>
+            </div>
+        </div>
+    </div>
+</div>
